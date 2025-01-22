@@ -1,0 +1,36 @@
+1. <header>
+    define a header of document,it is a container,it contain navigation links,headings,introductory content
+2.<nav>
+    contain block of navigation links,this links direct to another page.previous->div tag and list used
+3.<section>
+    it divide the content inito section that share a common theme,requires a heading,dependent,not Resource
+4.<article>
+    independent piece of content,blog ,post can be used,reusable 
+5.<main>
+    contents in the main is unique,main content of the page.central and primary
+6.<aside>
+    supplimentary content,used for sidebars,advertisment,inside the main,it is related to main topic
+7.<footer>
+    define footer area,used for Contact Information,copyright Information,author Information,multiple times
+8.<figure>
+    group media with its caption into a single unit.it is a reference from main,<figcaption> ->it provide the caption,previous->div tag used 
+9.<audio>
+    used to embded sound content,listen the audio directly without external plugin,controls->play,pause,stop
+    loop can be repeatly want to hear it,various audio format used,prevous---><embed> and <object> tag.it uses the external plugin flash player,no playback controls
+10.<video>
+    used to embded the video 
+11.<source>
+    specify multiple media resource for the browser
+12.<mark>
+    used to highlight text,create a yellow background,it is marked for important or relevant information and it is for specific attention
+    prevous-><strong>,<em>,<span>,<b>tags
+13.<meter>
+    display the progress or rating,scalar measurment within a range,fixed value,attribute -->max,min,optimum,high,low
+    previous-->progress
+14.<details>
+    create a disclosure widget which user can view or hide additional content,space effieciency,<summary> tag will give the clickable heading reveal the details.previous->click events used (java)
+15.<dialog>
+    create a dialog box .it used to user inetraction to alert message ,warning,error,keyboard interaction used:esc to close the box.previous->div tag used
+16.<datalist>
+    user can select from a set of suggested options,it doesnot display the options directly,suggestion and custom input,prevoius->select tag
+17.<wbr> word break opportunity,self closing tag,avoid horizontal scaling,set the screen size,avoid overflow,previous->- and <br> tag
