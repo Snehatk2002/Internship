@@ -34,3 +34,21 @@
 16.<datalist>
     user can select from a set of suggested options,it doesnot display the options directly,suggestion and custom input,prevoius->select tag
 17.<wbr> word break opportunity,self closing tag,avoid horizontal scaling,set the screen size,avoid overflow,previous->- and <br> tag
+18.<picture>
+ most appropriate image based on the screensize,resolution,format
+ maintain image quality
+ help to responsive webpage
+ also a img tag it will used to it dosenot satisfy the media queries it will display this image on the page
+ multiple image format support(webp)
+ it work both dark and white mode
+ 
+ css
+ it control the layout,color,font
+ it used to design html element
+ type of css
+ inline-single text or element
+ internal-single page
+ external-all pages using a extrenal file .it will be saved as .css
+ selectors-how to style html element
+ 
+ css
