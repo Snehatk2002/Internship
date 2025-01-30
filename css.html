@@ -1,28 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>csss</title>
-    <link rel="stylesheet" href="mystyle.css">    
+    <link rel="stylesheet" href="mystyle.css">
     <style>
-        h2
-        {
-            color:green;
+        h1::before {
+            content: url(https://tse2.mm.bing.net/th?id=OIP.pktWrYeBtLgEnr9ikWF-ZAHaGM&pid=Api&P=0&h=180);
         }
+        h2::after {
+            content: " hi";
+        }
+        ::selection {
+  color: red;
+  background: yellow;
+}
+        ::marker {
+            color: red;
+            font-size: 23px;
+        }
+
+        h2 {
+            color: green;
+        }
+
+        /*pseudo classes*/
+        a:link {
+            color: blue;
+        }
+
+        a:visited {
+            color: aqua;
+        }
+
+        a:hover {
+            color: brown;
+        }
+
+        a:active {
+            color: blueviolet;
+        }
+
+        a.highlight:hover {
+            color: #ff0000;
+            font-size: 22px;
+        }
+
+        p {
+            display: none;
+            background-color: yellow;
+            font-size: 20px;
+        }
+
+        p::first-line {
+            color: #ff0000
+        }
+
+        div:hover p {
+            display: block;
+        }
+        input:focus
+        {
+            background-color:aquamarine;
+            border-radius: 20px;
+        }
+        input::placeholder {
+  color: gray;
+  font-style: italic;
+}
     </style>
 </head>
+
 <body>
     <h1>css</h1>
-    <p style="color:red">it stands for cascading style sheet.it is used to design the htm document</p>
+    <p style="color:red">it stands for cascading style sheet.it is used to design the htm document.</p>
     <p>
-        The Federal Institute of Science and Technology (FISAT) is a self-financing private engineering college established and promoted by the Federal Bank Officers’ Association Educational Society (FBOAES).The FBOAES is an initiative of the Federal Bank Officers’ Association (FBOA), the sole representative body of all Federal Bank officers. Federal Institute of Science and Technology (FISAT) occupies a unique position in South India’s Professional Education Sector. 
+        The Federal Institute of Science and Technology (FISAT) is a self-financing private engineering college
+        established and promoted by the Federal Bank Officers’ Association Educational Society (FBOAES).The FBOAES is an
+        initiative of the Federal Bank Officers’ Association (FBOA), the sole representative body of all Federal Bank
+        officers. Federal Institute of Science and Technology (FISAT) occupies a unique position in South India’s
+        Professional Education Sector. Some more text. And even more, and more, and more, and more, and more, and more,
+        and more, and more, and more, and more, and more, and more.
     </p>
     <h2>web development</h2>
+
+
+
     <ul>
         <li>java</li>
         <li>css</li>
         <li>html</li>
     </ul>
+
+    <a href="https://www.flipkart.com/" target="_blank">Flipkart</a>
+    <p><a class="highlight" href="css_syntax.asp">CSS Syntax</a></p>
+    <div>Hover over this div element to show the p element
+        <p>Tada! Here I am!</p>
+    </div>
+    </div>
+    <input type="text" name="first name" placeholder="sneha">
 </body>
+
 </html>
