@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+        .flex-container {
+            display: flex;
+            background-color: aqua;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /*flex-flow: row wrap;*/
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+        }
+
+        .flex-container>div {
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+        @media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+    flex:100%;
+  }
+}
+/*float*/
+img
+{
+float:right
+}
+.para
+{
+    clear:both;
+    color:red;
+}
+#p1
+{
+    color:brown;
+}
+.img-container
+
+{
+    float:left;
+    width: 33.33%;
+  padding: 5px;
+}
+.clearfix
+{
+    clear:both
+}
+/*combinator*/
+div > p {
+  background-color: aliceblue;
+}
+
+/*box model*/
+.div1
+{
+    width: 320px;
+  height: 50px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+}
+
+div.sticky {
+  position: sticky;
+  top: 0;
+  background-color: green;
+  border: 2px solid #4CAF50;
+}
+
+    </style>
+</head>
+
+<body>
+    <h1>Create a Flex Container</h1>
+<div>
+    <div class="flex-container">
+        <div style="order:1">1</div>
+        <div style="order:4">2</div>
+        <div style="order:3">3</div>
+        <div style="order:2">3</div>
+        <div>3</div>
+        <div>3</div>
+        <div>3</div>
+        <div>3</div>
+        <div>3</div>
+        <div>3</div>
+        <div>3</div>
+        <div>3</div>
+        <div>3</div>
+    </div>
+    <div class="sticky">
+        This div element has position: static;
+        </div>
+    <p >
+        <img src="college.jpg" alt="fisat">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+    </p>
+    <a href="https://www.w3schools.com/csS/tryit.asp?filename=trycss_sel_element_tilde" target="_blank">www</a>
+    <p class="para" id="p1" style="color:green">
+        most appropriate image based on the screensize,resolution,format
+ maintain image quality
+ help to responsive webpage
+ also a img tag it will used to it dosenot satisfy the media queries it will display this image on the page
+ multiple image format support(webp)
+ it work both dark and white mode
+ most appropriate image based on the screensize,resolution,format
+ maintain image quality
+ help to responsive webpage
+ also a img tag it will used to it dosenot satisfy the media queries it will display this image on the page
+ multiple image format support(webp)
+ it work both dark and white mode
+ most appropriate image based on the screensize,resolution,format
+ maintain image quality
+ help to responsive webpage
+ also a img tag it will used to it dosenot satisfy the media queries it will display this image on the page
+ multiple image format support(webp)
+ it work both dark and white mode
+ most appropriate image based on the screensize,resolution,format
+ maintain image quality
+ help to responsive webpage
+ also a img tag it will used to it dosenot satisfy the media queries it will display this image on the page
+ multiple image format support(webp)
+ it work both dark and white mode
+ most appropriate image based on the screensize,resolution,format
+ maintain image quality
+ help to responsive webpage
+ also a img tag it will used to it dosenot satisfy the media queries it will display this image on the page
+ multiple image format support(webp)
+ it work both dark and white mode
+ most appropriate image based on the screensize,resolution,format
+ maintain image quality
+ help to responsive webpage
+ also a img tag it will used to it dosenot satisfy the media queries it will display this image on the page
+ multiple image format support(webp)
+ it work both dark and white mode
+     most appropriate image based on the screensize,resolution,format
+ maintain image quality
+ help to responsive webpage
+ also a img tag it will used to it dosenot satisfy the media queries it will display this image on the page
+ multiple image format support(webp)
+ it work both dark and white mode
+ most appropriate image based on the screensize,resolution,format
+ maintain image quality
+ help to responsive webpage
+ also a img tag it will used to it dosenot satisfy the media queries it will display this image on the page
+ multiple image format support(webp)
+ it work both dark and white mode
+    </p>
+    <section>
+        <p>sneha</p>
+        </section>
+
+</div>
+    <div class="clearfix">
+        <div class="img-container">
+        <img src="college.jpg" alt="college" style="width:100%">
+        </div>
+        <div class="img-container">
+        <img src="college.jpg" alt="college" style="width:100%">
+        </div>
+        <div class="img-container">
+        <img src="college.jpg" alt="college" style="width:100%">
+        </div>
+    </div>
+      <p>help to responsive webpage
+        also a img tag it will used to it dosenot satisfy the media queries it will display this image on the page
+        multiple image format support(webp)
+        it work both dark and white mode</p>
+
+        <div class="div1">
+            it work both dark and white mode
+        </div>
+        
+            
+</body>
+
+</html>
